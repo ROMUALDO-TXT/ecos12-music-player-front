@@ -15,7 +15,8 @@ code {
 /* Estilos gerais para o corpo */
 body {
   font-family: 'Arial', sans-serif;
-  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
   background-color: #2c3e50;
   margin: 0;
 }
@@ -51,4 +52,16 @@ body {
 
 .player-container {
   background-color: #f0f0f0;
+}
+
+.unlogged-container {
+  background-color: #f0f0f0;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.unlogged-container h2{
+  margin-top: 45vh;
 }

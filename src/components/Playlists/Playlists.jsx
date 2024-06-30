@@ -2,7 +2,7 @@ import React from 'react';
 import { FaPlus } from "react-icons/fa";
 import './Playlists.css';
 
-const Playlists = ({ playlists, onSelectPlaylist, selectedPlaylist }) => {
+const Playlists = ({ playlists, onSelectPlaylist, selectedPlaylist, onRequestCreatePlaylistOpen }) => {
 
     return (
         <div className="playlist-container">
@@ -15,10 +15,10 @@ const Playlists = ({ playlists, onSelectPlaylist, selectedPlaylist }) => {
             <hr />
             <div className='my-playlists-header'>
                 <h2>Minhas Playlists</h2>
-                <button ><FaPlus size="22" /></button>
+                <button onClick={() => { onRequestCreatePlaylistOpen(true) }} ><FaPlus size="22" /></button>
             </div>
-            <ul className='playlist-list'>
-                {playlists.map((playlist, index) => (
+            <ol className='playlist-list'>
+                {playlists && playlists.length < 0 ? playlists.map((playlist, index) => (
                     <li
                         key={index}
                         onClick={() => onSelectPlaylist(playlist.id)}
@@ -26,8 +26,8 @@ const Playlists = ({ playlists, onSelectPlaylist, selectedPlaylist }) => {
                     >
                         {playlist.name}
                     </li>
-                ))}
-            </ul>
+                )) : <p className='no-playlists'>Você não tem playlists. <br/> Crie uma agora mesmo!</p>}
+            </ol>
         </div>
     );
 };

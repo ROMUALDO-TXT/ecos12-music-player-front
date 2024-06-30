@@ -6,21 +6,29 @@
     transition: all 0.25s ease-in;
 }
 .all-tracks:hover{
-    color: rgb(25, 159, 25);
+    color: rgba(0,139,255,1);
     transition: all 0.25s ease-in;
 }
 .green {
-    color: rgb(25, 159, 25);
+    color: rgba(0,139,255,1);
 }
 
 .playlist-list{
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 1em;
+    padding-left: 0em;
 }
 
 .playlist-list-item{
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.playlist-list-item:hover {
+    cursor: pointer;
+    color: rgba(0,139,255,1);
 }
 
 .my-playlists-header{
@@ -47,4 +55,9 @@
     color: rgb(25, 159, 25);
     rotate: 90deg;
     transition: all 0.25s ease-in;
+}
+
+.no-playlists {
+    font-size: .8em ;
+    font-weight: 400;
 }

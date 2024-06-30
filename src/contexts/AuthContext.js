@@ -20,6 +20,8 @@ export function AuthProvider(props) {
         removeCookie('music-app-user', {
             path: '/'
         });
+
+        window.location.reload();
     }
 
 
@@ -90,8 +92,17 @@ export function AuthProvider(props) {
         };
     }
 
+    const isAuthenticated = () => {
+        if (cookies['music-app-user'] && cookies['music-app-user'] !== "") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
     return (
-        <AuthContext.Provider value={{ signIn, signOut, signUp }}>
+        <AuthContext.Provider value={{ signIn, signOut, signUp, isAuthenticated }}>
             {props.children}
         </AuthContext.Provider>
     )
