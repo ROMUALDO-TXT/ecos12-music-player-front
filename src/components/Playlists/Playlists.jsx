@@ -18,7 +18,7 @@ const Playlists = ({ playlists, onSelectPlaylist, selectedPlaylist, onRequestCre
                 <button onClick={() => { onRequestCreatePlaylistOpen(true) }} ><FaPlus size="22" /></button>
             </div>
             <ol className='playlist-list'>
-                {playlists && playlists.length < 0 ? playlists.map((playlist, index) => (
+                {playlists && playlists.length > 0 ? playlists.map((playlist, index) => (
                     <li
                         key={index}
                         onClick={() => onSelectPlaylist(playlist.id)}

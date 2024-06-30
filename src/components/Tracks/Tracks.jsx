@@ -54,7 +54,6 @@ const Tracks = ({
         (<p>Adicione novas músicas á sua Playlist!</p>) :
         (<p>Adicione novas músicas biblioteca virtual!</p>)
       )}
-      
       </ol>
     </div>
   );

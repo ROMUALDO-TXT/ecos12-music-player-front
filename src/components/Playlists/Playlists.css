@@ -14,6 +14,8 @@
 }
 
 .playlist-list{
+    max-height: 55vh;
+    overflow: auto;
     list-style: none;
     margin: 0;
     font-size: large;

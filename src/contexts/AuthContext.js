@@ -71,7 +71,7 @@ export function AuthProvider(props) {
                 maxAge: 60 * 60 * 24 * 10,
                 path: '/',
             });
-            setCookie('music-app-user', response.data.user.name, {
+            setCookie('music-app-user', response.data.user, {
                 maxAge: 60 * 60 * 24 * 10,
                 path: '/',
             });

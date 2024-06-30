@@ -6,6 +6,11 @@
     transition: all 0.25s ease-in;
 }
 
+.track-list{
+    max-height: 61vh;
+    overflow-y: auto;
+}
+
 .track-list-item {
     margin: 0;
     margin-bottom: .5em;
