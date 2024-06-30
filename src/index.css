@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Estilos gerais para o corpo */
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  background-color: #2c3e50;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.app-container{
+  display: grid;
+  grid-template-columns: 2fr 4fr 3fr;
+  height: 90vh;
+
+}
+
+.playlist-container,
+.tracks-container,
+.player-container {
+  flex: 1;
+  margin-top: 80px;
+  padding: 10px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.playlist-container {
+  background-color: #f0f0f0;
+}
+
+.tracks-container {
+  background-color: #ffffff;
+}
+
+.player-container {
+  background-color: #f0f0f0;
+}

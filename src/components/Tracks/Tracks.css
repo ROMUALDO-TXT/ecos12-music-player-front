@@ -1,0 +1,7 @@
+.all-tracks{
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: -1em;
+    transition: all 0.25s ease-in;
+}
